@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Wucdbm TwoCaptcha package.
+ *
+ * Copyright (c) Martin Kirilov <wucdbm@gmail.com>.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Wucdbm\Component\TwoCaptcha;
 
 class TwoCaptchaOptions {
@@ -145,7 +154,7 @@ class TwoCaptchaOptions {
     }
 
     /**
-     * https://2captcha.com/2captcha-api#language
+     * https://2captcha.com/2captcha-api#language.
      *
      * @param string|null $lang
      *
@@ -210,7 +219,7 @@ class TwoCaptchaOptions {
     /**
      * URL for pingback (callback) response that will be sent when captcha is solved.
      * URL should be registered on the server. More info here.
-     * https://2captcha.com/2captcha-api#pingback
+     * https://2captcha.com/2captcha-api#pingback.
      *
      * @param null|string $url
      *
@@ -246,5 +255,4 @@ class TwoCaptchaOptions {
 
         return $this;
     }
-
 }

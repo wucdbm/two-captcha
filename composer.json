@@ -1,0 +1,28 @@
+{
+    "name": "wucdbm/two-captcha",
+    "type": "library",
+    "description": "Two Captcha",
+    "keywords": ["two captcha", "wucdbm"],
+    "authors": [
+        {
+            "name": "Martin Kirilov",
+            "email": "wucdbm@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.8",
+        "wucdbm/php-cs-fixers": "~0.2"
+    },
+    "autoload": {
+        "psr-4": { "Wucdbm\\Component\\TwoCaptcha\\": "src" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "license": "MIT"
+}

@@ -87,12 +87,13 @@ class TwoCaptcha {
         }
 
         if (1 !== $job['status']) {
-            throw new \RuntimeException(sprintf('Status was expected to be 1, but was "%s"', $job['status']));
+            throw new \RuntimeException(sprintf(
+                'Status was expected to be 1, but was "%s": %s',
+                $job['status'], $job['request']
+            ));
         }
 
-        $jobId = $job['request'];
-
-        return $jobId;
+        return $job['request'];
     }
 
     public function check(int $jobId) {
